@@ -1,0 +1,162 @@
+.main {
+	background-color: #1f2023;
+	box-sizing: border-box;
+}
+
+.containerImgLogo {
+	display: flex;
+	align-items: center;
+	padding-top: 40px;
+	flex-direction: column;
+}
+
+.barSearchAndIcon {
+	display: flex;
+}
+
+.iconFontAweSomeIcon {
+	background-color: white;
+	height: 42px;
+	width: 15px;
+	padding-right: 15px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+.searchBar {
+	width: 330px;
+	height: 40px;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border: none;
+	margin-bottom: 10px;
+	outline: none;
+	padding-left: 15px;
+}
+.searchBar::placeholder {
+	margin-left: 15px;
+}
+
+.textNbSearch {
+	color: white;
+	margin-bottom: 100px;
+}
+
+.containerGame {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	justify-content: center;
+}
+
+.imgGame {
+	width: 250px;
+	height: 370px;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.containerGameImgTitle:hover {
+	cursor: pointer;
+	top: -15px;
+	transition: top ease 0.5s;
+}
+
+.containerTitleGame {
+	position: absolute;
+	bottom: 2px;
+	background-color: rgba(0, 0, 0, 0.536);
+	width: 250px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.titleGame {
+	color: white;
+	margin-left: 10px;
+}
+
+.containerGameImgTitle {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.filters {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 100px;
+	width: 1300px;
+}
+
+.styleSort {
+	margin-right: 25px;
+	background-color: #3a3d44;
+	border-radius: 7px;
+	padding: 6px;
+}
+
+.goFilters {
+	border-radius: 7px;
+	padding: 6px;
+	background-color: #ff4655;
+	color: white;
+	border: none;
+	cursor: pointer;
+	width: 90px;
+}
+
+.select {
+	background-color: #3a3d44;
+	border: none;
+	color: white;
+	width: 45px;
+	padding-left: 3px;
+	cursor: pointer;
+}
+.select2 {
+	background-color: #3a3d44;
+	border: none;
+	color: white;
+	width: 75px;
+	padding-left: 3px;
+	cursor: pointer;
+}
+
+.sortAndFilters {
+	margin-left: 775px;
+	display: flex;
+}
+
+.paginate {
+	display: flex;
+	justify-content: center;
+	color: white;
+}
+
+.paginate:hover {
+	cursor: pointer;
+}
+.activePage {
+	color: #ff4655;
+}
+.pageLinkClassName {
+	padding: 20px;
+}
+
+.breakClassName {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.nextClassName {
+	font-size: 21px;
+	margin-left: 40px;
+}
+.previousClassName {
+	font-size: 21px;
+	margin-right: 40px;
+}

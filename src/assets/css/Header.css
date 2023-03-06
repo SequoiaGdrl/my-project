@@ -1,0 +1,49 @@
+.containerHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	background-color: #1f2023;
+	height: 50px;
+	border-bottom: 2px solid#FF4655;
+}
+
+.logoHeader {
+	margin-left: 15px;
+	width: 150px;
+}
+
+.textHeader {
+	color: white;
+	font-size: 17px;
+	padding-top: 3px;
+}
+
+.textAndBoutonHeader {
+	display: flex;
+	gap: 20px;
+	margin-right: 35px;
+}
+
+.boutonHeader {
+	width: 55px;
+	height: 26px;
+	border-radius: 6px;
+	background-color: #ff4655;
+	border: none;
+	cursor: pointer;
+}
+
+.boutonHeader2 {
+	width: 95px;
+	height: 26px;
+	border-radius: 6px;
+	background-color: #ff4655;
+	border: none;
+	cursor: pointer;
+}
+
+.textBouton {
+	color: white;
+	font-weight: 500;
+}

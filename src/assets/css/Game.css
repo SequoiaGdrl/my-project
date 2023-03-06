@@ -1,0 +1,113 @@
+.main2 {
+	background-color: #1f2023;
+	box-sizing: border-box;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.containerGame {
+	width: 1390px;
+	margin: 0 auto;
+}
+.containerTitleAndPictureGame {
+	width: 600px;
+	margin-right: 60px;
+}
+
+.titreGame {
+	color: white;
+	padding-top: 100px;
+	margin-left: 13px;
+	font-size: 30px;
+	margin-bottom: 5px;
+	margin-bottom: 15px;
+}
+
+.pictureGame {
+	width: 600px;
+	height: 400px;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.containerButton {
+	margin-bottom: 30px;
+}
+
+.containerDescriptionGame {
+	width: 700px;
+}
+.buttonGame {
+	width: 120px;
+	height: 50px;
+	text-align: start;
+	color: white;
+	background-color: #1f2023;
+	border: 1px solid white;
+	margin-right: 20px;
+	border-radius: 7px;
+	padding-left: 10px;
+	font-size: 17px;
+	cursor: pointer;
+}
+
+.iconBookmark {
+	color: white;
+	margin-left: 8px;
+}
+
+.containerPlateforms {
+	width: 250px;
+	height: 50px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 4;
+	margin-right: 100px;
+	margin-bottom: 33px;
+}
+
+.platform {
+	color: white;
+}
+
+.objectKey {
+	color: rgba(128, 128, 128, 0.708);
+}
+
+.description {
+	color: white;
+	height: 72px;
+	line-height: 18px;
+	margin-right: 50px;
+	overflow: hidden;
+}
+
+.containerDesDesc {
+	display: flex;
+}
+
+.genreText {
+	color: white;
+}
+
+.containerGamesSemblables {
+	display: flex;
+
+	gap: 20px;
+}
+
+.photos {
+	width: 250px;
+	height: 370px;
+	object-fit: cover;
+	padding-bottom: 100px;
+}
+
+.titleOtherGames {
+	color: white;
+	font-size: 25px;
+	padding-top: 80px;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 20px;
+}

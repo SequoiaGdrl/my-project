@@ -110,4 +110,95 @@
 	display: flex;
 	justify-content: center;
 	padding-bottom: 20px;
+	font-weight: 200;
+}
+
+.reviewsTitle {
+	color: white;
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	font-size: 20px;
+	margin-bottom: 20px;
+	font-weight: 200;
+}
+
+.spanLong {
+	margin-left: 5px;
+	font-size: 10px;
+}
+
+.reviewsSousTitle {
+	color: white;
+	width: 600px;
+	margin: 0 auto;
+	padding-left: 25px;
+	padding-bottom: 7px;
+}
+
+.containerReviews {
+	background-color: #2a2b2e;
+	width: 600px;
+	margin: 0 auto;
+	padding: 15px;
+	border-radius: 10px;
+	margin-bottom: 50px;
+}
+
+.commentTitle {
+	color: white;
+	font-size: 15px;
+	text-decoration: underline;
+	margin-bottom: 10px;
+}
+.messageOreview {
+	display: flex;
+	justify-content: center;
+	color: white;
+	font-size: 25px;
+	margin-top: 50px;
+	padding-bottom: 50px;
+}
+
+.commentText {
+	color: white;
+	font-size: 13px;
+}
+
+.containerOwner {
+	display: flex;
+	margin-top: 20px;
+	align-items: center;
+	gap: 10px;
+}
+
+.imgOwner {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+
+.commentDate {
+	color: #898b92;
+	font-size: 12px;
+}
+
+.commentUser {
+	color: white;
+	font-size: 15px;
+}
+
+.finger {
+	display: flex;
+	margin-left: 320px;
+	align-items: center;
+}
+
+.plusMoins {
+	height: 30px;
+	margin-right: 4px;
+}
+
+.counterPlus {
+	margin-right: 20px;
 }

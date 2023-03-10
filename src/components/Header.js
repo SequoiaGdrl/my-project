@@ -3,8 +3,10 @@ import logo from "../assets/img/logo.png";
 import { useNavigate, Link } from "react-router-dom";
 import Cookies from "js-cookie";
 
-const Header = ({ connected, setConnected }) => {
+const Header = ({ connected, setConnected, user, setUser }) => {
 	const navigate = useNavigate();
+
+	console.log(user);
 
 	return (
 		<section className="containerHeader">
@@ -22,9 +24,15 @@ const Header = ({ connected, setConnected }) => {
 						navigate("/favorites");
 					}}
 				>
-					{" "}
-					My Collection{" "}
+					My Collection
 				</p>
+
+				{connected && (
+					<div className="containerUserHeader">
+						<span className="nameHeader">{user.username}</span>
+						<img className="imgHeader" src={user.avatar.secure_url} alt="" />
+					</div>
+				)}
 
 				{connected ? (
 					<button className="boutonHeader2">
@@ -34,6 +42,7 @@ const Header = ({ connected, setConnected }) => {
 								navigate("/login");
 								setConnected(false);
 								Cookies.remove("token");
+								localStorage.removeItem("user");
 							}}
 						>
 							Deconnection

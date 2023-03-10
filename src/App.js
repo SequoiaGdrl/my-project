@@ -6,17 +6,29 @@ import Game from "./pages/Game";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Favorites from "./pages/Favorites";
+import Review from "./pages/Review";
 import { useState } from "react";
 
 function App() {
-	const [connected, setConnected] = useState(false);
+	const [connected, setConnected] = useState(
+		localStorage.getItem("user") ? true : false
+	);
 	const [favGame, setFavGame] = useState(
 		JSON.parse(localStorage.getItem("favGame")) || []
 	);
 
+	const [user, setUser] = useState(
+		JSON.parse(localStorage.getItem("user")) || {}
+	);
+
 	return (
 		<Router>
-			<Header connected={connected} setConnected={setConnected} />
+			<Header
+				connected={connected}
+				setConnected={setConnected}
+				user={user}
+				setUser={setUser}
+			/>
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route
@@ -32,11 +44,25 @@ function App() {
 				/>
 				<Route
 					path="/login"
-					element={<Login connected={connected} setConnected={setConnected} />}
+					element={
+						<Login
+							connected={connected}
+							setConnected={setConnected}
+							user={user}
+							setUser={setUser}
+						/>
+					}
 				/>
 				<Route
 					path="/signup"
-					element={<Signup connected={connected} setConnected={setConnected} />}
+					element={
+						<Signup
+							connected={connected}
+							setConnected={setConnected}
+							user={user}
+							setUser={setUser}
+						/>
+					}
 				/>
 
 				<Route
@@ -49,6 +75,10 @@ function App() {
 							setConnected={setConnected}
 						/>
 					}
+				/>
+				<Route
+					path="/review/:id"
+					element={<Review user={user} setUser={setUser} />}
 				/>
 			</Routes>
 		</Router>

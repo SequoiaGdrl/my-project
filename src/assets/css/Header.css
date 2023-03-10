@@ -17,12 +17,14 @@
 	color: white;
 	font-size: 17px;
 	padding-top: 3px;
+	font-weight: 200;
 }
 
 .textAndBoutonHeader {
 	display: flex;
 	gap: 20px;
 	margin-right: 35px;
+	align-items: center;
 }
 
 .boutonHeader {
@@ -46,4 +48,21 @@
 .textBouton {
 	color: white;
 	font-weight: 500;
+}
+
+.containerUserHeader {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.nameHeader {
+	color: white;
+}
+
+.imgHeader {
+	width: 40px;
+	height: 40px;
+	object-fit: cover;
+	border-radius: 50%;
 }

@@ -10,7 +10,7 @@ import axios from "axios";
 import { useState } from "react";
 import Cookies from "js-cookie";
 
-const Signup = ({ connected, setConnected }) => {
+const Signup = ({ connected, setConnected, user, setUser }) => {
 	const [username, setUsername] = useState("");
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
@@ -28,7 +28,7 @@ const Signup = ({ connected, setConnected }) => {
 	const fetchdata = async () => {
 		try {
 			const response = await axios.post(
-				"https://site--backend-gamepad--fm844hvczrhh.code.run/signup",
+				"https://site--backend-gamepad--589lmtjqrlkh.code.run/signup",
 				{
 					username: username,
 					email: email,
@@ -47,6 +47,8 @@ const Signup = ({ connected, setConnected }) => {
 			if (token) {
 				Cookies.set("token", token, { expires: 14 });
 				setConnected(true);
+				setUser(response.data);
+				localStorage.setItem("user", JSON.stringify(response.data));
 				navigate("/");
 				alert("Bienvenue! Vous êtes connecté");
 			}

@@ -1,0 +1,69 @@
+.grandContainer {
+	width: 600px;
+	margin: 0 auto;
+	margin-top: 100px;
+	padding: 20px;
+}
+
+.containerReview {
+	width: 600px;
+	background-color: #424448;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.iconReview {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 20px;
+	width: 100%;
+}
+
+.iconX {
+	color: white;
+	padding-bottom: 5px;
+}
+
+.titleReview {
+	display: flex;
+	color: white;
+	margin-bottom: 7px;
+}
+
+.labelTitle1 {
+	color: white;
+	padding-bottom: 5px;
+	font-size: 14px;
+}
+
+.containerInputReview {
+	display: flex;
+	flex-direction: column;
+	width: 600px;
+	margin: 0 auto;
+}
+
+.inputArea {
+	border-radius: 10px;
+	margin-bottom: 20px;
+	border: none;
+	outline: none;
+	padding: 10px;
+}
+
+.containerButtonSubmit {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.buttonSubmit {
+	width: 90px;
+	height: 30px;
+	border-radius: 7px;
+	border: none;
+	outline: hidden;
+	background-color: #ff4655;
+	color: white;
+}
